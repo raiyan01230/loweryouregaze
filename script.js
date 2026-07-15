@@ -7,7 +7,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const bgVideo = document.getElementById('bg-video');
-  const autoplayOverlay = document.getElementById('autoplay-overlay');
   const btnNo = document.getElementById('btn-no');
   const btnYes = document.getElementById('btn-yes');
 
@@ -25,16 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
       bgVideo.play()
         .then(() => {
           interactionRegistered = true;
-          if (autoplayOverlay) {
-            autoplayOverlay.classList.add('hidden');
-          }
         })
         .catch((error) => {
           console.warn('Playback with audio was deferred or prevented by browser:', error);
-          // Keep showing click overlay if playback failed
-          if (autoplayOverlay) {
-            autoplayOverlay.classList.remove('hidden');
-          }
         });
     }
   };
@@ -46,17 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     bgVideo.playsInline = true;
     bgVideo.play().catch((err) => {
       console.warn('Muted video autoplay blocked on initial load:', err);
-    });
-  }
-
-  // Explicit user interaction on overlay dismisses and plays unmuted
-  if (autoplayOverlay) {
-    autoplayOverlay.addEventListener('click', (e) => {
-      e.stopPropagation();
-      unmuteAndPlayVideo();
-      if (btnNo) {
-        btnNo.focus();
-      }
     });
   }
 
