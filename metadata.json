@@ -1,0 +1,6 @@
+{
+  "name": "Remember Allah - Self-Discipline Warning Screen",
+  "description": "A serious, cinematic, fullscreen warning message and self-discipline reminder featuring atmospheric loops and audio reminders designed to intercept browsing decisions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

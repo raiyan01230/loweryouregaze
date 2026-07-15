@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remember Allah - Before Making Your Choice</title>
+  <!-- Link the separate style.css -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Fullscreen Fallback Overlay for Browser Autoplay Blocks -->
+  <div id="autoplay-overlay" class="autoplay-overlay">
+    <div class="autoplay-text-glow">Click anywhere to continue.</div>
+    <div class="autoplay-sub">A reminder for self-discipline</div>
+  </div>
+
+  <!-- Background Video Container -->
+  <div class="video-background-container">
+    <!-- Loop, muted, autoplay, cover -->
+    <video id="bg-video" autoplay loop muted playsinline>
+      <source src="/Video Project.mp4" type="video/mp4">
+      <source src="/Video%20Project.mp4" type="video/mp4">
+    </video>
+    <!-- Cinematic black overlay above the video -->
+    <div class="overlay"></div>
+    <!-- Vignette layout element to pull emphasis to center -->
+    <div class="vignette"></div>
+  </div>
+
+  <!-- Perfectly Centered Content Container -->
+  <div class="page-wrapper">
+    <main class="content-card">
+      
+      <!-- Dramatic Main Heading -->
+      <h1 class="main-heading">
+        Do you want to become a kafir? A non-Muslim? Do you want to lose your good deeds and risk the punishment of Hell?
+      </h1>
+
+      <!-- Cinematic Subtitle -->
+      <p class="subtitle">
+        Remember Allah before making your choice.
+      </p>
+
+      <!-- Buttons Structure -->
+      <div class="buttons-container">
+        <!-- NO Button (Green, glowing, pulsed, larger, default focused) -->
+        <button id="btn-no" class="btn btn-no" autofocus>
+          No, I want to obey Allah.
+        </button>
+
+        <!-- YES Button (Dark Red, smaller) -->
+        <button id="btn-yes" class="btn btn-yes">
+          Yes, continue anyway.
+        </button>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Link the separate script.js -->
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

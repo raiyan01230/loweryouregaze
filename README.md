@@ -1,11 +1,12 @@
-<div align="center">
+# Self-Discipline Warning Applet
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+This is a personal self-discipline screen built with vanilla HTML, CSS, and JavaScript designed to intercept and interrupt browsing before accessing a blocked website. It provides a solemn reminder to remember Allah and maintain self-discipline.
 
-  <h1>Built with AI Studio</h2>
+## Setup & File Structure
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+This applet runs in an Express + Vite full-stack environment. The main files are:
+* `/index.html`: The full-screen structure with background video, audio warnings, and custom overlay.
+* `/src/index.css`: Global styles including custom keyframe animations and styling classes.
+* `/src/main.tsx`: Client entry point that handles audio autoplay checking, background loop initialization, and button redirects.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+The user's local video and audio are used to complete the atmospheric warning.
